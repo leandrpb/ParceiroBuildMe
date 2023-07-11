@@ -1,0 +1,69 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+    <ViewSettingsDialog>
+        
+        <filterItems>
+            
+            <ViewSettingsFilterItem text="Nome1" key="Nome1"
+                                    items="{path: '/Nome1'}">
+                <items>
+                    <ViewSettingsItem key="String___Nome1___{}" text="{}"></ViewSettingsItem>
+                </items>
+            </ViewSettingsFilterItem>
+            
+            
+            <ViewSettingsFilterItem text="CodigoParceiro" key="CodigoParceiro"
+                                    items="{path: '/CodigoParceiro'}">
+                <items>
+                    <ViewSettingsItem key="String___CodigoParceiro___{}" text="{}"></ViewSettingsItem>
+                </items>
+            </ViewSettingsFilterItem>
+            
+            
+            <ViewSettingsFilterItem text="Tipo" key="Tipo"
+                                    items="{path: '/Tipo'}">
+                <items>
+                    <ViewSettingsItem key="String___Tipo___{}" text="{}"></ViewSettingsItem>
+                </items>
+            </ViewSettingsFilterItem>
+            
+            
+            <ViewSettingsFilterItem text="TermoDePesquisa1" key="TermoDePesquisa1"
+                                    items="{path: '/TermoDePesquisa1'}">
+                <items>
+                    <ViewSettingsItem key="String___TermoDePesquisa1___{}" text="{}"></ViewSettingsItem>
+                </items>
+            </ViewSettingsFilterItem>
+            
+            
+        </filterItems>
+        
+
+        
+        <sortItems>
+            
+            <ViewSettingsItem text="Nome1" key="Nome1"/>
+            
+            <ViewSettingsItem text="CodigoParceiro" key="CodigoParceiro"/>
+            
+            <ViewSettingsItem text="Tipo" key="Tipo"/>
+            
+            <ViewSettingsItem text="TermoDePesquisa1" key="TermoDePesquisa1"/>
+            
+        </sortItems>
+        
+
+        
+        <groupItems>
+            
+            <ViewSettingsItem text="Nome1" key="Nome1"/>
+            
+            <ViewSettingsItem text="CodigoParceiro" key="CodigoParceiro"/>
+            
+            <ViewSettingsItem text="Tipo" key="Tipo"/>
+            
+            <ViewSettingsItem text="TermoDePesquisa1" key="TermoDePesquisa1"/>
+            
+        </groupItems>
+        
+    </ViewSettingsDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,16 @@
+{
+    "dataBinding": {
+        "/webapp/view/ListaParceiros.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Parceiro.view.xml": {
+            "entitySet": "/ParceirosSet"
+        }, 
+        "/webapp/view/SelectDialog2.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/SelectDialog1.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

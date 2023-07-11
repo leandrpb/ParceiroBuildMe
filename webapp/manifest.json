@@ -1,0 +1,144 @@
+{
+    "_version": "1.8.0",
+    "sap.app": {
+        "_version": "1.3.0",
+        "id": "com.sap.build.standard.prototipoParceiros",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.2.2"
+        },
+        "dataSources": {
+            "local": {
+                "uri": "/sap/opu/odata/sap/ZFIORI_PARCEIRO_JCALEBE_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0",
+                    "localUri": "localService/metadata.xml"
+                }
+            }
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "ach": "ach",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.32.0",
+            "toolsId": "1c97b7a2-0d9f-48ee-b7d4-26147617de63"
+        }
+    },
+    "sap.ui": {
+        "_version": "1.3.0",
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "_version": "1.3.0",
+        "rootView": {
+            "viewName": "generated.app.view.Parceiro",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.50.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/i18n.properties"
+            },
+            "": {
+                "dataSource": "local",
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "loadMetadataAsync": false,
+                    "json": true,
+                    "bJSON": true,
+                    "defaultBindingMode": "TwoWay",
+                    "defaultCountMode": "Inline",
+                    "useBatch": false,
+                    "refreshAfterChange": false,
+                    "disableHeadRequestForToken": true
+                }
+            }
+        },
+        "resources": {
+            "css": []
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "com.sap.build.standard.prototipoParceiros.view",
+                "controlId": "App",
+                "clearTarget": false,
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": [
+                        "ListaParceiros"
+                    ]
+                }
+            },
+            "targets": {
+                "ListaParceiros": {
+                    "controlAggregation": "pages",
+                    "viewName": "ListaParceiros",
+                    "viewId": "ListaParceiros",
+                    "viewLevel": 1,
+                    "transition": "slide"
+                },
+                "Parceiro": {
+                    "controlAggregation": "pages",
+                    "viewName": "Parceiro",
+                    "viewId": "Parceiro",
+                    "viewLevel": 2,
+                    "transition": "slide"
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "ListaParceiros/:context:",
+                    "name": "ListaParceiros",
+                    "target": [
+                        "ListaParceiros"
+                    ]
+                },
+                {
+                    "pattern": "",
+                    "name": "default",
+                    "target": [
+                        "ListaParceiros"
+                    ]
+                },
+                {
+                    "pattern": "Parceiro/:context:",
+                    "name": "Parceiro",
+                    "target": [
+                        "Parceiro"
+                    ]
+                }
+            ]
+        }
+    }
+}
